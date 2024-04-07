@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CurrencyConverter.css">
+        <script src="CurrencyConverter.js"></script>
+
+        <title>Currency Converter</title>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <section>
+                    <h1>US Dollar to Canadian Dollar.</h1>
+                    <h2>Convert USD to CAD at real exchange rate</h2>
+                </section>
+            </div><br><br>
+
+            <div style="align-items:center; display: flex; justify-content: center; ">
+                <div class="merged-input-container">
+                    <input type="text" id="amount" placeholder="Enter Amount">
+                    <select id="Value1">
+                        <option value="CAD1">CAD💲</option>
+                        <option value="USD1">USD💲</option>
+                    </select>
+                </div>
+                <p>&nbsp;&nbsp;&nbsp;←→&nbsp;&nbsp;&nbsp;</p>
+                <div class="merged-input-container">
+                    <input type="text" id="result" placeholder="Converted Amount"  readonly>
+                    <select id="Value2">
+                        <option value="USD2">USD💲</option>
+                        <option value="CAD2">CAD💲</option>
+                    </select>
+                </div>
+            </div>  
+
+            <br><br><br>
+            <button onclick="convert()">Convert</button>
+        </div>
+    </body>
+</html>
